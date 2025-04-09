@@ -30,30 +30,30 @@ A possible project structure is as follows:
 
 ```
 primeFlix/
-└──frontend/
+└── frontend/
     ├── public/
     ├── src/
     │   ├── components/
     │   │   └── Header/
-    │   │       ├── index.js
+    │   │       ├── index.tsx
     │   │       └── header.css
     │   ├── pages/
     │   │   ├── Home/
-    │   │   │   ├── index.js
+    │   │   │   ├── index.tsx
     │   │   │   └── home.css
-    │   │   ├── Filme/        // Detailed movie page
+    │   │   ├── Movie/        // Detailed movie page
     │   │   │   ├── index.js
-    │   │   │   └── filme.css
+    │   │   │   └── movie.css
     │   │   ├── Error/        // Not Found page
     │   │   │   ├── index.js
     │   │   │   └── error.css
-    │   │   └── Favoritos/    // Favorites page
+    │   │   └── Favorites/    // Favorites page
     │   │       ├── index.js
-    │   │       └── favoritos.css
+    │   │       └── favorites.css
     │   ├── services/
-    │   │   └── api.js        // Axios configuration for the TMDB API
-    │   ├── routes.js         // Centralized route configuration
-    │   └── App.js            // Main application entry point
+    │   │   └── api.ts        // Axios configuration for the TMDB API
+    │   ├── routes.tsx         // Centralized route configuration
+    │   └── App.tsx            // Main application entry point
     ├── package.json
     └── README.md
 ```
@@ -83,7 +83,7 @@ primeFlix/
 
 3. **Configure the TMDB API Key:**
 
-   Open the `src/services/api.js` file and insert your TMDB API key into the appropriate parameter when making requests. This key is required for fetching movie data.
+   Open the `src/services/api.tsx` file and insert your TMDB API key into the appropriate parameter when making requests. This key is required for fetching movie data.
 
 ### Running the Application
 
